@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Cadastro Cliente</title>
+</head>
+<body>
+    <h1>Cadastro de Cliente</h1>
+<form action="">
+    <fieldset>
+        <fieldset>
+        <legend>Dados Pessoais</legend>
+            <div>
+                <label for="nome">Primeiro Nome</label>
+                <input id="nome" type="text" required maxlength="30">
+            </div>
+                <label for="sobrenome">Sobrenome</label>
+                <input id="sobrenome" type="text">
+            <div>  
+                <label for="data-nascimento">Data Nascimento</label>
+                <input type="date" required>
+            </div>  
+                <label for="idade">Idade</label>
+                <input type="number" required min="18" max="100">
+            <div>
+                <label for="sexo">Masculino</label>
+                <input type="radio" name="sexo" value="masculino" required>
+            </div>
+            <div>
+                <label for="sexo">Feminino</label>
+                <input type="radio" name="sexo" value="feminino">
+            </div> 
+            <div>
+                <label for="sexo">   Outro</label>
+                <input type="radio" name="sexo" value="outro">
+            </div>
+            <div>
+                <label for="foto-perfil">Foto de Perfil</label>
+                <input type="file">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <p>
+                <label for="endereco">Endereço</label>
+                <input type="adress" required>
+            </p>
+
+            <p>
+                <label for="numero-casa">Numero da Casa</label>
+                <input type="number">
+            </p>
+
+            <p>
+                <label for="complemento">Complemento</label>
+                <input type="text">
+            </p>
+
+            <p>
+                <label for="cidade">Cidade</label>
+                <input list="cidades">
+                <datalist id="cidades">
+                    <option value="Tubarão">
+                    <option value="Florianopolis">
+                    <option value="São Paulo">
+                </datalist>
+            </p>
+
+            <p>
+                <label for="estado">Estado</label>
+                <select name="estado">
+                    <option name="estado" value="mock" selected>Selecione um Estado</option>
+                    <option name="estado" value="Santa Catarina">Santa Catarina</option>
+                    <option name="estado" value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option name="estado" value="Sao Paulo">Sao Paulo</option>
+                </select>    
+            </p>
+
+
+
+
+        </fieldset>
+
+
+    </fieldset>
+</form>
+
+
+
+</body>
+</html>
