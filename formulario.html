@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario Cadastro Cliente</title>
+    <link rel="stylesheet" href="stilo.css">
 </head>
-<body>
-    <h1>Cadastro de Cliente</h1>
-<form action="/sucesso.html" target="_blank">
-    <fieldset>
-        <fieldset>
-        <legend>Dados Pessoais</legend>
+<body id="background">
+    <h1 id="titulo" style="color: chartreuse;">Cadastro de Cliente</h1>
+<form action="sucesso.html" target="_blank">
+    <fieldset id="main-box">
+        <fieldset class="box1">
+        <legend class="legenda">Dados Pessoais</legend>
             <p>
                 <label for="nome">Primeiro Nome</label>
                 <input id="nome" type="text" required maxlength="30" autofocus>
@@ -24,26 +25,29 @@
             </p>  
                 <label for="idade">Idade</label>
                 <input type="number" required min="18" max="100">
-            </p>
-                <label for="sexo">Masculino</label>
-                <input type="radio" name="sexo" value="masculino" required>
-            <p>
-            </p>
-                <label for="sexo">Feminino</label>
-                <input type="radio" name="sexo" value="feminino">
-            </p> 
-            <p>
-                <label for="sexo">   Outro</label>
-                <input type="radio" name="sexo" value="outro">
-            </p>
+            <div>
+                <h3 style="color: rgb(252, 146, 164);">Sexo</h3>
+                </p>
+                    <label for="sexo">Masculino</label>
+                    <input type="radio" name="sexo" value="masculino" required>
+                <p>
+                </p>
+                    <label for="sexo">Feminino</label>
+                    <input type="radio" name="sexo" value="feminino">
+                </p> 
+                <p>
+                    <label for="sexo">Outro</label>
+                    <input type="radio" name="sexo" value="outro">
+                </p>
+            </div>
             <p>
                 <label for="foto-perfil">Foto de Perfil</label>
                 <input type="file">
             </p>
         </fieldset>
 
-        <fieldset>
-        <legend>Endereço</legend>
+        <fieldset class="box1">
+        <legend class="legenda">Endereço</legend>
             <p>
                 <label for="endereco">Endereço</label>
                 <input type="adress" required>
@@ -80,8 +84,8 @@
             </p>
         </fieldset>
 
-        <fieldset>
-            <legend>Contato</legend>
+        <fieldset class="box1">
+        <legend class="legenda">Contato</legend>
             <p>
                 <label for="telefone">Telefone</label>
                 <input type="tel">
@@ -99,8 +103,8 @@
             </p>    
         </fieldset>
 
-        <fieldset>
-            <legend>Login</legend>
+        <fieldset class="box1">
+        <legend class="legenda">Login</legend>
             <p>
                 <label for="nome">Nome de Usuario</label>
                 <input type="text">
@@ -118,19 +122,19 @@
             </p>
         </fieldset>
 
-        <fieldset>
-            <legend>Preferencias</legend>
+        <fieldset class="box1">
+        <legend class="legenda">Preferencias</legend>
             <p>
                 <label for="color">Sua Cor Favorita</label>
                 <input type="color">
             </p> 
             <p>
                 <label for="itens">Quais Itens mais gosta de comprar?</label>
-                <input type="checkbox" name="item1" required>Cenoura</input>
-                <input type="checkbox" name="item2" required>Ovo</input>
-                <input type="checkbox" name="item3" required>Chocolate</input>
-                <input type="checkbox" name="item4" required>Laranja</input>
-                <input type="checkbox" name="item5" required>Tomate</input>
+                <input type="checkbox" name="item1">Cenoura</input>
+                <input type="checkbox" name="item2">Ovo</input>
+                <input type="checkbox" name="item3">Chocolate</input>
+                <input type="checkbox" name="item4">Laranja</input>
+                <input type="checkbox" name="item5">Tomate</input>
             </p>
             <p>
                 <label for="mes">Qual mes do ano mais gosta de fazer compras?</label>
@@ -138,11 +142,9 @@
             </p>
         </fieldset>
     </fieldset>
-    <button type="submit">Salvar</button>
-    <button type="reset">Limpar</button>
+    <button type="submit" class="botao1">Salvar</button>
+    <button type="reset" class="botao2">Limpar</button>
 </form>
-
-
 
 </body>
 </html>

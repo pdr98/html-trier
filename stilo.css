@@ -1,0 +1,32 @@
+.box1 {
+    border-color: aqua;
+    width:375px;
+    background-color: rgba(0, 255, 200, 0.397);
+    border-radius: 10px;
+}
+
+#main-box{
+    width: 400px;
+    margin: 0 auto;
+    background-color: rgba(0, 255, 200, 0.397);
+    border: 10px;
+    border-radius: 10px;
+}
+
+.legenda {
+    color: rgb(226, 43, 43);
+}
+
+#titulo {
+    text-align: center;
+}
+
+#background {
+    background-image: url(https://fotodicasbrasil.com.br/wp-content/uploads/2015/06/Destacada2-do-Artigo-Dicas-para-Fotografar-Por-do-Sol-690x350.jpg);
+    background-size: cover;
+}
+
+.botao1 {
+    margin-left: 800px;
+}
+
