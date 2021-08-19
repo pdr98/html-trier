@@ -8,41 +8,42 @@
 </head>
 <body>
     <h1>Cadastro de Cliente</h1>
-<form action="">
+<form action="/sucesso.html" target="_blank">
     <fieldset>
         <fieldset>
         <legend>Dados Pessoais</legend>
-            <div>
+            <p>
                 <label for="nome">Primeiro Nome</label>
-                <input id="nome" type="text" required maxlength="30">
-            </div>
+                <input id="nome" type="text" required maxlength="30" autofocus>
+            </p>
                 <label for="sobrenome">Sobrenome</label>
                 <input id="sobrenome" type="text">
-            <div>  
+            <p> 
                 <label for="data-nascimento">Data Nascimento</label>
                 <input type="date" required>
-            </div>  
+            </p>  
                 <label for="idade">Idade</label>
                 <input type="number" required min="18" max="100">
-            <div>
+            </p>
                 <label for="sexo">Masculino</label>
                 <input type="radio" name="sexo" value="masculino" required>
-            </div>
-            <div>
+            <p>
+            </p>
                 <label for="sexo">Feminino</label>
                 <input type="radio" name="sexo" value="feminino">
-            </div> 
-            <div>
+            </p> 
+            <p>
                 <label for="sexo">   Outro</label>
                 <input type="radio" name="sexo" value="outro">
-            </div>
-            <div>
+            </p>
+            <p>
                 <label for="foto-perfil">Foto de Perfil</label>
                 <input type="file">
-            </div>
+            </p>
         </fieldset>
 
         <fieldset>
+        <legend>Endereço</legend>
             <p>
                 <label for="endereco">Endereço</label>
                 <input type="adress" required>
@@ -77,14 +78,68 @@
                     <option name="estado" value="Sao Paulo">Sao Paulo</option>
                 </select>    
             </p>
-
-
-
-
         </fieldset>
 
+        <fieldset>
+            <legend>Contato</legend>
+            <p>
+                <label for="telefone">Telefone</label>
+                <input type="tel">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email">
+            </p>
+                <label for="site">Site Pessoa</label>
+                <input type="url">
+            <p>
+                <input type="checkbox" name="promocao">Deseja receber promocoes?</input>
+            <p>
+                <input type="checkbox" name="email">Deseja receber emails?</input>
+            </p>    
+        </fieldset>
 
+        <fieldset>
+            <legend>Login</legend>
+            <p>
+                <label for="nome">Nome de Usuario</label>
+                <input type="text">
+            </p>
+            <p>
+                <label for="senha">Senha</label>
+                <input type="password">
+            </p>
+            <p>
+                <label for="senha">Repita a Senha</label>
+                <input type="password">
+            </p>
+            <p>
+                <input type="checkbox" name="termos" required>Aceita os termos de uso?</input>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias</legend>
+            <p>
+                <label for="color">Sua Cor Favorita</label>
+                <input type="color">
+            </p> 
+            <p>
+                <label for="itens">Quais Itens mais gosta de comprar?</label>
+                <input type="checkbox" name="item1" required>Cenoura</input>
+                <input type="checkbox" name="item2" required>Ovo</input>
+                <input type="checkbox" name="item3" required>Chocolate</input>
+                <input type="checkbox" name="item4" required>Laranja</input>
+                <input type="checkbox" name="item5" required>Tomate</input>
+            </p>
+            <p>
+                <label for="mes">Qual mes do ano mais gosta de fazer compras?</label>
+                <input type="month">
+            </p>
+        </fieldset>
     </fieldset>
+    <button type="submit">Salvar</button>
+    <button type="reset">Limpar</button>
 </form>
 
 
