@@ -1,0 +1,5 @@
+HTML:
+1. Tabela
+
+CSS: 
+1. Seletor pseudo-elemento
