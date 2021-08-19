@@ -3,3 +3,7 @@ HTML:
 
 CSS: 
 1. Seletor pseudo-elemento
+
+https://www.notion.so/thiagobitencourt/HTML-eae14af0324544288fcb3af89298f396
+
+https://www.notion.so/thiagobitencourt/CSS-6ba56258b76a459e8cfa934bbe802707
